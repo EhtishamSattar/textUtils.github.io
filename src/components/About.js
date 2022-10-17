@@ -20,7 +20,7 @@ export default function About(props) {
     
   return (
     <div className="accordion mt-3" id="accordionExample" >
-    <h2>TextUtils - About Us</h2>
+    <h2 className="mb-5 p-3" style={styleAcc} >TextUtils - About Us</h2>
   <div className="accordion-item open" style={styleAcc}>
     <h2 className="accordion-header"  style={styleAcc}id="headingOne">
       <button className="accordion-button" style={styleAcc} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

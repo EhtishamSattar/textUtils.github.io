@@ -17,7 +17,7 @@ export default function Navbar(props) {
     <div  className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul  className="navbar-nav me-auto mb-2 mx-3 mb-lg-0" >
         <li  className="nav-item">
-          <Link className="nav-link  mx-2" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link " aria-current="page" to="/">Home</Link>
         </li>
         <li  className="nav-item">
           <Link  className="nav-link " to="/about">{props.about}</Link>
@@ -26,7 +26,7 @@ export default function Navbar(props) {
         <li>
 
 
-      <div className="form-check form-switch me-4 my-2 ">
+      <div className="form-check form-switch me-1 my-2 ">
   <input className="form-check-input" onClick={props.toggleColor} type="checkbox" role="switch" aria-checked id="flexSwitchCheckDefault"/>
   <label className={`form-check-label text-${props.mode==='dark'?'light':'dark'}`} htmlFor="flexSwitchCheckDefault" >Enable Dark Mood</label>
 </div>

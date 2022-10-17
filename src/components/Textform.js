@@ -60,7 +60,7 @@ export default function Textform(props) {
     <>
       <div>
         <div className={`my-3 text-${props.mode==='dark'?'light':'dark'}`}>
-          <h2>{props.heading}</h2>
+          <h2 className='mb-4'>{props.heading}</h2>
           <textarea
             className={`form-control text-${props.mode==='dark'?'light':'dark'} bg-${props.mode==='dark'?'secondary':'light'}`}
             value={text}
@@ -79,7 +79,7 @@ export default function Textform(props) {
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-2 ${text.length===0?'disabled':'active'} my-1`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} mx-1 my-1`}
           onClick={lowerCaseClick}
         >
           Convert to LowerCase
@@ -93,7 +93,7 @@ export default function Textform(props) {
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} mx-2 my-1`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} mx-1 my-1`}
           onClick={spaceClick}
         >
           Remove Extra Spaces
@@ -107,7 +107,7 @@ export default function Textform(props) {
         </button>
       </div>
           
-      <div className={`my-2 text-${props.mode==='dark'?'light':'dark'} my-1`}>
+      <div className={`my-1 text-${props.mode==='dark'?'light':'dark'} `}>
         <p>
           words {text.split(/\s+/ ).filter((element)=>{return element.length!==0}).length} characters {text.length}
         </p>
