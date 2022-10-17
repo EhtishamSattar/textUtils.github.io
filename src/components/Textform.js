@@ -71,7 +71,7 @@ export default function Textform(props) {
         </div>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'}`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} my-2`}
           onClick={upperCaseClick}
         
         >
@@ -79,35 +79,35 @@ export default function Textform(props) {
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-2 ${text.length===0?'disabled':'active'}`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} mx-2 ${text.length===0?'disabled':'active'} my-2`}
           onClick={lowerCaseClick}
         >
           Convert to LowerCase
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'}`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} my-2`}
           onClick={copyClick}
         >
           Copy to keyboard
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} mx-2`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} mx-2 my-2`}
           onClick={spaceClick}
         >
           Remove Extra Spaces
         </button>
         <button
           type="button"
-          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'}`}
+          className={`btn btn-${props.mode==='dark'?'dark':'primary'} ${text.length===0?'disabled':'active'} my-2`}
           onClick={clearClick}
         >
           Clear Text
         </button>
       </div>
           
-      <div className={`my-2 text-${props.mode==='dark'?'light':'dark'}`}>
+      <div className={`my-2 text-${props.mode==='dark'?'light':'dark'} my-2`}>
         <p>
           words {text.split(/\s+/ ).filter((element)=>{return element.length!==0}).length} characters {text.length}
         </p>
